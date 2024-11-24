@@ -11,18 +11,13 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-from dotenv import load_dotenv
 import os
 
-load_dotenv()
-
 if os.path.exists('env.py'):
-    import environ
+    import env
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': os.getenv('dqavku7fd'),
-    'API_KEY': os.getenv('182864721262978'),
-    'API_SECRET': os.getenv('1WCkX0W4i51y7o-HEyEar4J4qmY'),
+    'CLOUDINARY_URL': os.environ.get('CLOUDINARY_URL')
 }
 MEDIA_URL = '/media/'   
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
@@ -41,7 +36,7 @@ SECRET_KEY = 'django-insecure-%=f1v$zj#fj596zha2(888+r3#79^8r&u*)hck(o9#&wu1^s_r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-raypt808-djangorestfram-kh2ud2plr88.ws-eu116.gitpod.io']
+ALLOWED_HOSTS = ['8000-raypt808-djangorestfram-9nmso05f0x2.ws-eu116.gitpod.io']
 
 
 # Application definition
