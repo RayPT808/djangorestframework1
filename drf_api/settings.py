@@ -38,6 +38,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-raypt808-djangorestfram-qes15p19prq.ws-eu116.gitpod.io']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-raypt808-djangorestfram-qes15p19prq.ws-eu116.gitpod.io',
+]
+
 
 # Application definition
 
