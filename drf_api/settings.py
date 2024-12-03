@@ -36,12 +36,13 @@ SECRET_KEY = 'django-insecure-%=f1v$zj#fj596zha2(888+r3#79^8r&u*)hck(o9#&wu1^s_r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-raypt808-djangorestfram-tqxeqhqwhku.ws-eu117.gitpod.io'] 
+ALLOWED_HOSTS = ['8000-raypt808-djangorestfram-6mlovw3s7ff.ws-eu117.gitpod.io'] 
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-raypt808-djangorestfram-qes15p19prq.ws-eu116.gitpod.io',
     'https://8000-raypt808-djangorestfram-q27b7m0yvs7.ws-eu117.gitpod.io',
-    'https://8000-raypt808-djangorestfram-tqxeqhqwhku.ws-eu117.gitpod.io', 
+    'https://8000-raypt808-djangorestfram-tqxeqhqwhku.ws-eu117.gitpod.io',
+    'https://8000-raypt808-djangorestfram-6mlovw3s7ff.ws-eu117.gitpod.io',
 
 ]
 
@@ -58,7 +59,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'rest_framework',
-    'djngo-filters',
+    'django_filters',
 
     'profiles',
     'posts',
