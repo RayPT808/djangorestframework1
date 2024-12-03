@@ -58,12 +58,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'rest_framework',
+    'djngo-filters',
 
     'profiles',
     'posts',
     'comments',
     'likes',
-    'followers'   
+    'followers',
+       
 ]
 
 MIDDLEWARE = [
