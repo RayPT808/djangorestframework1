@@ -62,7 +62,8 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = 'DEV' in os.environ
 #DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'djangorestframework1.herokuapp.com']
+ALLOWED_HOSTS = ['djangorestframework1-47e5ef4ee651.herokuapp.com'] 
+               #['localhost', 'djangorestframework1.herokuapp.com']
                #['8000-raypt808-djangorestfram-6mlovw3s7ff.ws-eu117.gitpod.io']
                 
 
