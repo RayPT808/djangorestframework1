@@ -108,6 +108,26 @@ INSTALLED_APPS = [
 ]
 
 
+# Additional setting for deployment.
+
+
+INSTALLED_APPS += [
+    'corsheaders',  # Add this to your installed apps
+]
+
+MIDDLEWARE.insert(0, 'corsheaders.middleware.CorsMiddleware')  # Add as the first middleware
+
+# Allow all origins temporarily for testing:
+CORS_ALLOW_ALL_ORIGINS = True
+
+# Alternatively, for production, restrict to specific origins:
+ CORS_ALLOWED_ORIGINS = [
+     "https://your-frontend-url",
+     "http://localhost:3000",  # Local development URL
+ ]
+
+# Additional end
+
 SITE_ID = 1
 
 ACCOUNT_USER_MODEL_USERNAME_FIELD = None  # Optional if you are not using a username field
