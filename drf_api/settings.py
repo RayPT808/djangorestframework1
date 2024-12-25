@@ -142,9 +142,14 @@ if 'CLIENT_ORIGIN_DEV' in os.environ:
 #          os.environ.get('CLIENT_ORIGIN')
 #  ]
 #else:
-#    CORS_ALLOWED_ORIGIN_REGEXES = [
-#       r"^https:\/\/.*\.codeinstitute-ide\.net$",
-#  ]
+    CORS_ALLOWED_ORIGIN_REGEXES = [
+       r"^https:\/\/.*\.codeinstitute-ide\.net$",
+  ]
+
+    CORS_ALLOWED_ORIGINS = [
+    "https://3000-raypt808-moments-75v0hs57mct.ws-eu117.gitpod.io/signup",  # Replace with your frontend's URL
+]
+
 
  
 CORS_ALLOW_CREDENTIALS = True    
