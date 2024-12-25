@@ -120,8 +120,7 @@ MIDDLEWARE.insert(0, 'corsheaders.middleware.CorsMiddleware')  # Add as the firs
 # Allow all origins temporarily for testing:
 CORS_ALLOW_ALL_ORIGINS = True
 
-# Alternatively, for production, restrict to specific origins:
- CORS_ALLOWED_ORIGINS = [
+CORS_ALLOWED_ORIGINS = [
      "https://your-frontend-url",
      "http://localhost:3000",  # Local development URL
  ]
