@@ -111,9 +111,6 @@ INSTALLED_APPS = [
 # Additional setting for deployment.
 
 
-INSTALLED_APPS += [
-    'corsheaders',  # Add this to your installed apps
-]
 
 
 # Allow all origins temporarily for testing:
