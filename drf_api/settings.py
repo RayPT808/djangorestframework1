@@ -64,7 +64,7 @@ DEBUG = 'DEV' in os.environ
 #DEBUG = True
 
 ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOST'),'localhost']
-               #['djangorestframework1-47e5ef4ee651.herokuapp.com'] 
+['djangorestframework1-47e5ef4ee651.herokuapp.com'] 
                #['localhost', 'djangorestframework1.herokuapp.com']
                #['8000-raypt808-djangorestfram-6mlovw3s7ff.ws-eu117.gitpod.io']
                 
